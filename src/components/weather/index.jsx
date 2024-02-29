@@ -5,7 +5,7 @@ import { getData } from "../../store/weather";
 import { RingLoader } from "react-spinners";
 
 export default function Weahter({ dispatch }) {
-  const city = useRef();
+  const city = useRef("");
   function handleClick() {
     dispatch(getData(city.current.value));
   }
